@@ -8,11 +8,13 @@ pipeline
 }
     stages{
         
-        stage('Build stage')
+
+          stage('Build stage')
         {
             steps{
-                bat 'mvn clean package'
+               build 'amazonbuildjob'
             }
         }
+       
     }
 }
