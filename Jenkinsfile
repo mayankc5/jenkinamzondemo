@@ -13,7 +13,7 @@ opipeline
         {
             steps{
                build 'amazonbuildjob'
-                echo 'hello'
+                echo 'hello' 
             }
         }
        
