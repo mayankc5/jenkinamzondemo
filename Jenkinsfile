@@ -3,8 +3,8 @@ pipeline
     
     agent any    
    tools {
-    jdk 'jdk-21'
-  maven 'MavenBuild'
+    jdk 'JAVA_HOME'
+   maven 'MAVEN_HOME'
 }
     stages{
         
