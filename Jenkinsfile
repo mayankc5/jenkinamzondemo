@@ -1,4 +1,4 @@
-pipeline
+opipeline
 {
     
     agent any    
@@ -13,6 +13,7 @@ pipeline
         {
             steps{
                build 'amazonbuildjob'
+                echo 'hello'
             }
         }
        
