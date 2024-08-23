@@ -1,18 +1,20 @@
 pipeline
 {
     
-    agent any
-    
+    agent any    
    tools {
-  maven 'MavenBuild'
+    jdk 'JAVA_HOME'
+   maven 'MAVEN_HOME'
 }
     stages{
         
-        stage('Build stage')
+
+          stage('Build stage')
         {
             steps{
-                mvn clean package
+               build 'amazonbuildjob'
             }
         }
+       
     }
 }
