@@ -2,6 +2,11 @@ pipeline
 {
     
     agent any
+
+    tools {
+  jdk 'jdk-21'
+}
+
     
    tools {
   maven 'MavenBuild'
