@@ -12,8 +12,8 @@ opipeline
           stage('Build stage')
         {
             steps{
-               build 'amazonbuildjob'
-                echo 'hello' 
+             
+               bat "mvn -Dmaven.test.failure.ignore=true clean package"
             }
         }
        
